@@ -1,0 +1,247 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+$color:#ffcc00;
+
+.wrap { 
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.header { 
+  .header__slogan { 
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.36px;
+    text-align: center;
+    color: #898f8f;
+    padding-top: 8%;
+    padding-bottom: 3%;
+  }
+
+  .header__title { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: $color;
+    padding-bottom: 5%;
+  }
+
+  .custom { 
+    color: $color;
+  }
+
+
+  .header__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    
+    .header__icon--icon{
+      padding: 0 10px 0 10px;
+    }
+
+    .header__hr-left{
+      width: 210px;
+      height: 2px;
+      background-color: $color;
+    }
+
+    .fa-fire{
+      color: $color;
+    }
+
+    .header__hr-right{
+      width: 210px;
+      height: 2px;
+      background-color: $color;
+    }
+  }
+}
+
+.main { 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+  .fas{
+    color: $color;
+  }
+}
+
+.conteiner{
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width:425px){
+    flex-direction: column;
+  }
+}
+
+.main-block-left { 
+  border: 2px dashed $color;
+  margin-left: 3%;
+  padding: 3%;
+
+  .main-block-left__image { 
+    max-width: 388px;
+    height: 100%;
+    margin-left: 0%;
+    border: solid 1px $color;
+    object-fit: cover;
+  }
+
+  &:hover{
+    border: 2px outset $color;
+    transition: all .3s ease;
+  }
+
+  @media screen and (max-width:768px){
+    .main-block-left__image { 
+      max-width: 215px;
+    }
+  }
+
+  @media screen and (max-width:425px){
+    .main-block-left__image { 
+      max-width: 215px;
+    }
+  }
+}
+
+.vert-hr{
+  width: 1px;
+  height: 560px;
+  position: relative;
+  left: 60px;
+  border: 1px solid $color;
+  @media screen and (max-width:425px){
+    display: none;
+  }
+}
+
+.main-block-right { 
+  margin-left: 8%;
+
+  .main-block-right__caption { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: 0.72px;
+    text-align: center;
+    color: #666666;
+  }
+
+  .hr-line{
+    width: 100px;
+    height: 1px;
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: $color;
+  }
+
+  .main-block-right__subtitle { 
+    font-family:'Raleway', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 5%;
+  }
+
+  .main-block-right__list { 
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-block-right__item { 
+    padding: 5px;
+    color: #898f8f;
+    margin-bottom: 3%;
+    .fab{
+      font-size: 30px;
+    }
+  }
+
+  .main-block-right__text {   
+    padding: 0px 60px 0px 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 5%;
+  }
+
+  .dashed{
+    width: 40px;
+    margin: 10px auto;
+    border-bottom: dashed 5px $color;
+  }
+
+  @media screen and (max-width:425px){
+    .hr-line{
+      margin-left: 35%;
+    }
+
+    .main-block-right__text {   
+      padding: 0px 30px 0px 30px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.71;
+      text-align: center;
+      color: #333333;
+      margin-bottom: 5%;
+    }
+  }
+}
+
+.button {
+  border: solid 1px $color;
+  margin-top: 12%;
+  background-color:#fff;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666666;
+  padding: 10px 15px 5px 15px;
+  margin-top: 10px;
+  margin-left: 37%;
+}
+
+  
+@media screen and (max-width:425px){
+  .button{
+    margin-left: 33%;
+  }
+}
+
+.footer { 
+  margin-top: 10%;
+  margin-bottom: 3%;
+
+  .footer__list { 
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__item { 
+    width: 10px;
+    height: 10px;
+    margin: 41px 7px 1px 3px;
+    background-color: $color;
+    border-radius: 50%;
+  }
+
+  .footer__item:nth-child(2){
+    border: solid 1px $color;
+    background-color: #fff;
+  }
+}

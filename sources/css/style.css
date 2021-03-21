@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+/*--------------------*/
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.header .header__slogan {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.36px;
+  text-align: center;
+  color: #898f8f;
+  padding-top: 8%;
+  padding-bottom: 3%;
+}
+.header .header__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  color: #ffcc00;
+  padding-bottom: 5%;
+}
+.header .custom {
+  color: #ffcc00;
+}
+.header .header__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+}
+.header .header__icon .header__icon--icon {
+  padding: 0 10px 0 10px;
+}
+.header .header__icon .header__hr-left {
+  width: 210px;
+  height: 2px;
+  background-color: #ffcc00;
+}
+.header .header__icon .fa-fire {
+  color: #ffcc00;
+}
+.header .header__icon .header__hr-right {
+  width: 210px;
+  height: 2px;
+  background-color: #ffcc00;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.main .fas {
+  color: #ffcc00;
+}
+
+.conteiner {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 425px) {
+  .conteiner {
+    flex-direction: column;
+  }
+}
+
+.main-block-left {
+  border: 2px dashed #ffcc00;
+  margin-left: 3%;
+  padding: 3%;
+}
+.main-block-left .main-block-left__image {
+  max-width: 388px;
+  height: 100%;
+  margin-left: 0%;
+  border: solid 1px #ffcc00;
+  object-fit: cover;
+}
+.main-block-left:hover {
+  border: 2px outset #ffcc00;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .main-block-left .main-block-left__image {
+    max-width: 215px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main-block-left .main-block-left__image {
+    max-width: 215px;
+  }
+}
+
+.vert-hr {
+  width: 1px;
+  height: 560px;
+  position: relative;
+  left: 60px;
+  border: 1px solid #ffcc00;
+}
+@media screen and (max-width: 425px) {
+  .vert-hr {
+    display: none;
+  }
+}
+
+.main-block-right {
+  margin-left: 8%;
+}
+.main-block-right .main-block-right__caption {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 0.72px;
+  text-align: center;
+  color: #666666;
+}
+.main-block-right .hr-line {
+  width: 100px;
+  height: 1px;
+  margin-left: 40%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: #ffcc00;
+}
+.main-block-right .main-block-right__subtitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: #666666;
+  margin-bottom: 5%;
+}
+.main-block-right .main-block-right__list {
+  display: flex;
+  justify-content: center;
+}
+.main-block-right .main-block-right__item {
+  padding: 5px;
+  color: #898f8f;
+  margin-bottom: 3%;
+}
+.main-block-right .main-block-right__item .fab {
+  font-size: 30px;
+}
+.main-block-right .main-block-right__text {
+  padding: 0px 60px 0px 60px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 5%;
+}
+.main-block-right .dashed {
+  width: 40px;
+  margin: 10px auto;
+  border-bottom: dashed 5px #ffcc00;
+}
+@media screen and (max-width: 425px) {
+  .main-block-right .hr-line {
+    margin-left: 35%;
+  }
+  .main-block-right .main-block-right__text {
+    padding: 0px 30px 0px 30px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 5%;
+  }
+}
+
+.button {
+  border: solid 1px #ffcc00;
+  margin-top: 12%;
+  background-color: #fff;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666666;
+  padding: 10px 15px 5px 15px;
+  margin-top: 10px;
+  margin-left: 37%;
+}
+
+@media screen and (max-width: 425px) {
+  .button {
+    margin-left: 33%;
+  }
+}
+.footer {
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+.footer .footer__list {
+  display: flex;
+  justify-content: center;
+}
+.footer .footer__item {
+  width: 10px;
+  height: 10px;
+  margin: 41px 7px 1px 3px;
+  background-color: #ffcc00;
+  border-radius: 50%;
+}
+.footer .footer__item:nth-child(2) {
+  border: solid 1px #ffcc00;
+  background-color: #fff;
+}
